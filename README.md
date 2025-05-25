@@ -55,7 +55,6 @@ Includes:
   - Unified CSS in `css`;
   - Images in `img`;
   - SQL import/export scripts in `sql`;
-  - Demonstration video;
   - `.html` and `.php` files integrated with PMA.
 
 ### `/Sprint4`

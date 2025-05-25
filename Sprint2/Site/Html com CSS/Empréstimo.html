@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Do Empréstimo</title>
+    <link rel="stylesheet" href="Css/estilo.css">
+    <link rel="stylesheet" href="Img/icon (1).png">
+</head>
+
+<body>
+    <div class="cabecalho">
+        <h1>Biblioteca Sesi</h1>
+        <div class="links">
+            <a href="home.html">Inicio</a>
+            <a href="Cadastro_De_Usuário.html">Biblioteca</a>
+            <a href="cadastro_do_livro.html">Livros</a>
+            <a href="Cadastro_De_Cliente.html">Cliente</a>
+        </div>
+    </div>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <div>
+        <fieldset class="formato4">
+            <legend>Cadastro de Empréstimos</legend><br>
+            <form action="#">
+                <label>Cód. Empréstimo</label><br>
+                <input type="text" name="cod.emprestimo" required><br><br>
+
+                <label>Data do Empréstimo</label><br>
+                <input type="date" name="data_emprestimo" required><br><br>
+                <hr>
+                <label>Data de Devolução</label><br>
+                <input type="date" name="data_devolucao" required><br><br>
+                <label>ISBN</label><br>
+                <input type="text" name="ISBN" required><br><br>
+                <label>CPF Cliente</label><br>
+                <input type="text" name="cpf_cliente" required><br><br>
+                <label>CPF usuário</label><br>
+                <input type="text" name="cpf_usuário" required><br><br>
+                <label>Nº de Livros</label><br>
+                <input type="number" name="num_livros" required><br><br>
+
+                <button type="submit">Enviar</button><br><br>
+            </form>
+        </fieldset>
+    </div>
+    <footer class="rodape">
+    <p>© Biblioteca SESI 2024. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

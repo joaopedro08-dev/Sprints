@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estoque de livros | Biblioteca SESI</title>
+    <link rel="Icon" href="img/icon.png">
+</head>
+
+<body>
+    <header>
+        <img src="img/icon.png" width="50">
+        <h1>Biblioteca Sesi</h1>
+        <hr>
+    </header>
+    <h2>Cadastro do Livro</h2>
+    <div>
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+        <fieldset>
+            <Legend>Cadastro de Livros</Legend>
+            <form action="#">
+                <label>ISBN do Livro</label>
+                <input type="text" name="cod.livro" required>
+                <label>Data Cadastro</label>
+                <input type="date" name="dt_cadastro" required>
+                <label>Número de Cópias</label>
+                <input type="number" name="numero de cópias" required>
+                <hr>
+                <label>Ano de Publicação</label>
+                <input type="date" name="ano_edi" required>
+                <label>Categoria</label>
+                <input type="text" name="categoria" required>
+                <hr>
+                <label>Autor</label>
+                <input type="text" required>
+                <label>Idioma</label>
+                <input type="text" name="idioma" required>
+                <hr>
+                <label>Titulo</label>
+                <input type="text" name="titulo" required>
+                <hr>
+                <label>Editora</label>
+                <input type="text" name="editora" required>
+                <label>Número de edição</label>
+                <input type="number" name="numero de edição" required>
+                <label>Número de Volume</label>
+                <input type="text" name="n.volume" required><br>
+                <label>Número de Páginas</label>
+                <input type="text" name="n.pág" required>
+                <hr>
+                <button id="#"><a href="menu.html">Cadastrar</a></button>
+            </form>
+        </fieldset>
+    </div>
+    <hr>
+    <footer>
+        <p>© Biblioteca SESI 2024. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

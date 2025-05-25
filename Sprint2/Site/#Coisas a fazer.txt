@@ -1,0 +1,4 @@
+Juntar HTML com CSS e HTML sem CSS
+Terminar PHP do Login do Usuário
+Corrigir HTMLs
+Analisar PHP e, se possível, integrar PHP's

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Biblioteca SESI</title>
+  <link rel="Icon" href="img/icon.png">
+</head>
+
+<body>
+  <header>
+    <img src="img/icon.png" width="50">
+    <h1>Biblioteca Sesi</h1>
+    <hr>
+  </header>
+  <h2>Login do usuário</h2>
+  <form action="login_usuário.php" method="post">
+    <fieldset>
+      <legend><strong> Dados pessoais ✏️</strong></legend>
+
+      <label>CPF </label>
+      <input type="cpf" name="cpf" placeholder="(XX) XXXXX-XXXX" required><br>
+      <br>
+      <label>Senha</label>
+      <input type="senha" name="senha" placeholder="XXXXX" required><br>
+      <br>
+
+    </fieldset>
+    <br>
+    <button><a href="menu.html">Entrar</a></button>
+  </form>
+  <hr>
+  <footer>
+    <p>© Biblioteca SESI 2024. Todos os direitos reservados.</p>
+  </footer>
+
+
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+</body>
+
+</html>

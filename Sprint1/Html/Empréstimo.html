@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Do Empréstimo</title>
+</head>
+
+<body>
+    <header>
+        <img src="img/icon.png" width="50">
+        <h1>Biblioteca Sesi</h1>
+        <hr>
+      </header>
+    <h1>Cadastro de Empréstimo</h1>
+    <div>
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+        <fieldset>
+            <legend>Cadastro de Empréstimos</legend>
+            <form action="#">
+                <label>Cód. Empréstimo</label>
+                <input type="text" name="cod.emprestimo" required>
+
+                <label>Data do Empréstimo</label>
+                <input type="date" name="data_emprestimo" required>
+                <hr>
+                <label>Data de Devolução</label>
+                <input type="date" name="data_devolucao" required>
+
+                <label>ISBN</label>
+                <input type="text" name="ISBN" required>
+                <hr>
+                <label>CPF Cliente</label>
+                <input type="text" name="cpf_cliente" required>
+
+                <label>CPF usuário</label>
+                <input type="text" name="cpf_usuário" required>
+
+                <label>Nº de Livros</label>
+                <input type="number" name="num_livros" required>
+
+                <hr>
+                <button type="submit"><a href="menu.html">Enviar</a></button>
+            </form>
+        </fieldset>
+    </div>
+    <hr>
+    <footer>
+        <p>© Biblioteca SESI 2024. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

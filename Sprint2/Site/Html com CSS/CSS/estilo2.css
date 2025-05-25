@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: serif;
+}
+.cabecalho{
+    background: #b80d0d;
+    padding: 20px;
+    width: 100%;
+}
+form {
+    max-width: 300px;
+    background-color: rgb(233, 233, 233);
+    padding: 10px;
+    margin-left: 40%;
+}
+.rodape{
+    background: #b80d0d;
+    color: white;
+    display: flex;
+    text-align: center;
+    padding: 50px;
+    margin-top: 20px;
+}
+button,a{
+    background-color:#b80d0d;
+    color: #fffbfb;
+    text-decoration: none;
+}
+.o{
+    text-align: center;
+}
+.l{
+    text-align: center;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca Sesi</title>
+</head>
+
+<body>
+  <header>
+    <img src="Img/icon (1).png" width="50">
+    <h1>Biblioteca Sesi</h1>
+    <hr>
+  </header>
+  <h1>Devolução</h1>
+  <form action="devolução.php" method="post">
+    <fieldset>
+      <legend><strong> Devolução do livro 🖍️</strong></legend>
+      <br>
+      <label> ISBN </label>
+      <input type="ISBN" name="isbn" placeholder="XXXXX-XXXX" required><br>
+      <br>
+      <label> CPF </label>
+      <input type="cpf" name="cpf" placeholder="(XX) XXX-XXXX" required><br>
+      <br>
+      <button>Enviar</button>
+    </fieldset>
+  </form>
+  <br>
+  <br>
+  <img src="img/est.png" alt="Login" width="160" height="120">
+  <hr>
+  <footer>
+    <p>© Biblioteca SESI 2024. Todos os direitos reservados.</p>
+  </footer>
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+  </fieldset>
+</body>
+
+</html>

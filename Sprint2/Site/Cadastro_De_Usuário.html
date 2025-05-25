@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de usuário | Biblioteca SESI</title>
+    <link rel="Icon" href="img/icon.png">
+</head>
+
+<body>
+    <header>
+        <img src="img/icon.png" width="50">
+        <h1>Biblioteca Sesi</h1>
+        <hr>
+    </header>
+    <div>
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+        <form action="Cadastro_De_Usuário.php" method="post">
+            <h1>Cadastramento da Biblioteca</h1>
+            <br>
+            <label>Nome Completo*</label>
+            <input type="text" name="nome" placeholder="Nome" required>
+            <br>
+            <br>
+            <label>Data de nascimento*</label>
+            <input type="date" name="dt_de_nasc" required>
+            <label>CPF</label>
+            <input type="text" name="cpf" placeholder="xxx-xxx-xxx-xx" maxlength="14" required>
+            <br>
+            <br>
+            <label>E-mail*</label>
+            <input type="text" name="e-mail" placeholder="E-mail" required>
+            <label for="sexo">Sexo*</label>
+            <select name="sexo" id="sexo">
+                <option value="selecione">Selecione</option>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+            </select>
+            <br>
+            <br>
+            <label>Número de Telefone*</label>
+            <input type="text" name="tel" placeholder="(xx) x xxxx-xxxx" required maxlength="11">
+            <br>
+            <br>
+            <label for="estado">Estado*</label>
+            <select id="estado" name="estado" required>
+                <option value="selecione">Selecione</option>
+                <optgroup label="Sudeste">
+                    <option value="saopaulo">São Paulo</option>
+                    <option value="riodejaneiro">Rio de Janeiro</option>
+                    <option value="minasgerais">Minas Gerais</option>
+                    <option value="espiritosanto">Espírito Santo</option>
+                </optgroup>
+                <optgroup label="Sul">
+                    <option value="parana">Paraná</option>
+                    <option value="santacatarina">Santa Catarina</option>
+                    <option value="riograndedosul">Rio Grande do Sul</option>
+                </optgroup>
+                <optgroup label="Centro-Oeste">
+                    <option value="goias">Goiás</option>
+                    <option value="matogrosso">Mato Grosso</option>
+                    <option value="matogrossodosul">Mato Grosso do Sul</option>
+                </optgroup>
+                <optgroup label="Norte">
+                    <option value="amazonas">Amazonas</option>
+                    <option value="para">Pará</option>
+                    <option value="acre">Acre</option>
+                    <option value="amapa">Amapá</option>
+                    <option value="rondonia">Rondônia</option>
+                    <option value="roraima">Roraima</option>
+                    <option value="tocantins">Tocantins</option>
+                </optgroup>
+                <optgroup label="Nordeste">
+                    <option value="bahia">Bahia</option>
+                    <option value="alagoas">Alagoas</option>
+                    <option value="ceara">Ceará</option>
+                    <option value="maranhao">Maranhão</option>
+                    <option value="paraiba">Paraíba</option>
+                    <option value="pernambuco">Pernambuco</option>
+                    <option value="piaui">Piauí</option>
+                    <option value="riograndedonorte">Rio Grande do Norte</option>
+                    <option value="sergipe">Sergipe</option>
+                </optgroup>
+            </select>
+            <br>
+            <br>
+            <label>Endereço*</label>
+            <input type="text" name="endereço" placeholder="Alameda das Travessas nº 1," required>
+            <label>CEP*</label>
+            <input type="text" name="cep" placeholder="xxxxx-xxx" maxlength="9" required>
+            <br>
+            <br>
+            <label for="cargo">Cargo*</label>
+            <select name="cargo" id="cargo" required>
+                <option value="selecione">Selecione</option>
+                <option value="professor(a)">Professor(a)</option>
+                <option value="bibliotecario(a)">Bibliotecário(a)</option>
+                <option value="coordenador(a)">Coordenador(a)</option>
+                <option value="reitor(a)">Reitor(a)</option>
+                <option value="professor(a)">Direito(a)</option>
+                <option value="professor(a)">Procurador instituicional</option>
+            </select>
+            <label>Senha*</label>
+            <input type="password" name="senha" placeholder="Crie a senha" minlength="6" maxlength="20" required>
+            <br>
+            <br>
+            <button type="submit">Criar conta nova</button>
+        </form>
+    </div>
+    <hr>
+    <footer>
+        <p>© Biblioteca SESI 2024. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

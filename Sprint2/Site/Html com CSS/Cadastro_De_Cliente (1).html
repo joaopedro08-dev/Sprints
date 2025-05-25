@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de usuário | Biblioteca SESI</title>
+    <link rel="stylesheet" href="Css/estilo.css">
+    <link rel="stylesheet" href="Img/icon (1).png">
+</head>
+
+<body>
+    <div class="cabecalho">
+        <h1>Biblioteca Sesi</h1>
+        <div class="links">
+            <a href="home.html">Inicio</a>
+            <a href="Cadastro_De_Usuário.html">Biblioteca</a>
+            <a href="cadastro_do_livro.html">Livros</a>
+            <a href="Cadastro_De_Cliente.html">Cliente</a>
+        </div>
+    </div>
+    <div class="corpo">
+        <form action="home.html">
+            <h1 class="subtitulo">Cadastramento do Cliente</h1>
+            <br>
+            <label>Nome Completo</label><br>
+            <input type="text" name="nome" placeholder="Nome:" required>
+            <br>
+            <br>
+            <label>Data de nascimento</label><br>
+            <input type="date" name="dt_de_nasc" required><br><br>
+            <label>CPF</label><br>
+            <input type="text" name="cpf" placeholder="xxx-xxx-xxx-xx" maxlength="14" required>
+            <br>
+            <br>
+            <label>E-mail</label><br>
+            <input type="text" name="e-mail" placeholder="E-mail" required>
+            <br>
+            <br>
+            <label>Número de Telefone</label><br>
+            <input type="text" name="" placeholder="(xx) x xxxx-xxxx" required maxlength="11">
+            <br>
+            <br>
+            <label for="estado">Estado</label><br>
+            <select id="estado" name="estado" required>
+                <option value="selecione">Selecione</option>
+                <optgroup label="Sudeste">
+                    <option value="saopaulo">São Paulo</option>
+                    <option value="riodejaneiro">Rio de Janeiro</option>
+                    <option value="minasgerais">Minas Gerais</option>
+                    <option value="espiritosanto">Espírito Santo</option>
+                </optgroup>
+                <optgroup label="Sul">
+                    <option value="parana">Paraná</option>
+                    <option value="santacatarina">Santa Catarina</option>
+                    <option value="riograndedosul">Rio Grande do Sul</option>
+                </optgroup>
+                <optgroup label="Centro-Oeste">
+                    <option value="goias">Goiás</option>
+                    <option value="matogrosso">Mato Grosso</option>
+                    <option value="matogrossodosul">Mato Grosso do Sul</option>
+                </optgroup>
+                <optgroup label="Norte">
+                    <option value="amazonas">Amazonas</option>
+                    <option value="para">Pará</option>
+                    <option value="acre">Acre</option>
+                    <option value="amapa">Amapá</option>
+                    <option value="rondonia">Rondônia</option>
+                    <option value="roraima">Roraima</option>
+                    <option value="tocantins">Tocantins</option>
+                </optgroup>
+                <optgroup label="Nordeste">
+                    <option value="bahia">Bahia</option>
+                    <option value="alagoas">Alagoas</option>
+                    <option value="ceara">Ceará</option>
+                    <option value="maranhao">Maranhão</option>
+                    <option value="paraiba">Paraíba</option>
+                    <option value="pernambuco">Pernambuco</option>
+                    <option value="piaui">Piauí</option>
+                    <option value="riograndedonorte">Rio Grande do Norte</option>
+                    <option value="sergipe">Sergipe</option>
+                </optgroup>
+            </select>
+            <br>
+            <br>
+            <label>Endereço*</label><br>
+            <input type="text" name="endereço" placeholder="Alameda das Travessas nº 1," required><br><br>
+            <label>CEP*</label><br>
+            <input type="text" name="cep" placeholder="xxxxx-xxx" maxlength="9" required>
+            <br>
+            <br>
+            <button id="#"><a href="menu.html">Criar conta nova</a></button>
+        </form>
+    </div>
+    <footer class="rodape">
+        <p>© Biblioteca SESI 2024. Todos os direitos reservados.</p>
+    </footer>
+    <div>
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+    </div>
+
+</body>
+
+</html>

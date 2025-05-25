@@ -39,15 +39,12 @@ The project is divided into four main folders, each representing a sprint from t
 ### `/Sprint1`
 Includes:
 - `html` folder with the basic system structure;
-- `.docx` report;
 - Image of the database model;
-- Excel version of the model.
 
 ### `/Sprint2`
 Includes:
 - `BD` folder with the database model image;
 - `site` folder containing HTML, CSS, and PHP files;
-- `.docx` report.
 
 ### `/Sprint3`
 Includes:
